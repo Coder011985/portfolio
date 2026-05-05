@@ -1,9 +1,19 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Yash Patel Portfolio</title>
+
     <link rel="stylesheet" href="style.css">
+
+    <!-- ICONS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <!-- AOS -->
+    <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
 </head>
+
 <body>
 
 <!-- NAVBAR -->
@@ -18,51 +28,54 @@
 
 <div class="container">
 
-    <!-- HEADER -->
-    <header>
+    <!-- HERO -->
+    <section class="hero">
         <h1>Yash Patel</h1>
-        <p>🚀 Full Stack Developer | Laravel • .NET • MySQL</p>
-    </header>
+        <p>🚀 <span class="typing"></span></p>
+        <h3>Laravel • PHP • .NET • MySQL</h3>
+
+        <div class="hero-buttons">
+            <a href="#projects">View Projects</a>
+            <a href="#contact">Contact Me</a>
+        </div>
+    </section>
 
     <!-- ABOUT -->
-    <section id="about">
+    <section id="about" data-aos="fade-up" data-aos-duration="1000">
         <h2>About Me</h2>
         <p>
-            Full Stack Developer with experience in Laravel, PHP, ASP.NET, and MySQL.
-            I build scalable real-world applications.
+            Full Stack Developer with hands-on experience in Laravel, PHP, ASP.NET, and MySQL.
+            I specialize in building scalable, real-world web applications with clean architecture.
         </p>
     </section>
 
     <!-- PROJECTS -->
-    <section id="projects">
+    <section id="projects" data-aos="fade-up" data-aos-duration="1000">
         <h2>Projects</h2>
 
         <div class="projects">
 
             <div class="card">
                 <h3>🏠 Interior Design Portal</h3>
-                <p>Bidding, chat, and payment system using Laravel.</p>
+                <p>Full-stack system with bidding, chat, and payment integration.</p>
                 <div class="buttons">
                     <a href="https://github.com/Coder011985" target="_blank">GitHub</a>
-                    <a href="#">Live</a>
                 </div>
             </div>
 
             <div class="card">
                 <h3>✈️ Travel Planner</h3>
-                <p>Trip planning and booking system.</p>
+                <p>Trip planning and booking system with authentication and database management.</p>
                 <div class="buttons">
                     <a href="#">GitHub</a>
-                    <a href="#">Live</a>
                 </div>
             </div>
 
             <div class="card">
                 <h3>👨‍💼 Employee Management</h3>
-                <p>CRUD, salary and admin system.</p>
+                <p>Employee CRUD system with salary and admin management features.</p>
                 <div class="buttons">
                     <a href="#">GitHub</a>
-                    <a href="#">Live</a>
                 </div>
             </div>
 
@@ -70,19 +83,59 @@
     </section>
 
     <!-- SKILLS -->
-    <section>
+    <section id="skills" data-aos="fade-up" data-aos-duration="1000">
         <h2>Skills</h2>
-        <p>Laravel, PHP, ASP.NET, MySQL, JavaScript</p>
+
+        <div class="buttons">
+            <a>Laravel</a>
+            <a>PHP</a>
+            <a>.NET</a>
+            <a>MySQL</a>
+            <a>JavaScript</a>
+            <a>HTML</a>
+            <a>CSS</a>
+        </div>
     </section>
 
     <!-- CONTACT -->
-    <section id="contact">
+    <section id="contact" data-aos="fade-up" data-aos-duration="1000">
         <h2>Contact</h2>
         <p>Email: yash011589@gmail.com</p>
-        <p>GitHub: github.com/Coder011985</p>
+
+        <div class="buttons">
+            <a href="mailto:yash011589@gmail.com">
+                <i class="fa-solid fa-envelope"></i> Email
+            </a>
+
+            <a href="https://github.com/Coder011985" target="_blank">
+                <i class="fa-brands fa-github"></i> GitHub
+            </a>
+
+            <a href="https://www.linkedin.com/" target="_blank">
+                <i class="fa-brands fa-linkedin"></i> LinkedIn
+            </a>
+        </div>
     </section>
 
 </div>
+
+<!-- SCRIPTS -->
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+<script>
+AOS.init({
+    once: true
+});
+</script>
+
+<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+<script>
+new Typed(".typing", {
+    strings: ["Full Stack Developer", "Laravel Developer", ".NET Developer"],
+    typeSpeed: 60,
+    backSpeed: 40,
+    loop: true
+});
+</script>
 
 </body>
 </html>
