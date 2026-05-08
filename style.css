@@ -70,10 +70,10 @@ body {
 
 /* CONTAINER */
 .container {
-    width: 92%;
-    max-width: 1400px;
+    width: 95%;
+    max-width: 1500px;
     margin: auto;
-    padding: 20px 40px;
+    padding: 20px 30px;
 }
 
 .project-img {
@@ -105,19 +105,19 @@ body {
 .hero-box {
     display: flex;
     justify-content: space-between;
-    align-items: flex-start;
+    align-items: center;
     gap: 60px;
     width: 100%;
     flex-wrap: wrap;
-    min-height: 70vh;
 }
 
 .hero-left {
-    flex: 1.2;
+    flex: 1;
+    min-width: 320px;
 }
 
 .hero-right {
-    flex: 1;
+    flex: 0.8;
     display: flex;
     gap: 20px;
     justify-content: center;
@@ -140,7 +140,7 @@ body {
 }
 
 .hero h1 {
-   font-size: 72px;
+   font-size: 64px;
     line-height: 1.1;
     color: #38bdf8;
     margin-bottom: 10px;
@@ -338,8 +338,8 @@ footer {
 }
 
 #experience .card {
-    max-width: 900px;
-    padding: 30px;
+    max-width: 100%;
+    padding: 25px;
 }
 
 body::after {
