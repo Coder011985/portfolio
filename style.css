@@ -71,14 +71,14 @@ body {
 
 /* CONTAINER */
 .container{
-    width: 95%;
-    max-width: 1500px;
+    width: 98%;
+    max-width: 1700px;
     margin: auto;
 }
 
 .project-img {
     width: 100%;
-    height: 260px;
+    height: 280px;
     object-fit: cover;
     background: #0f172a;
     border-radius: 12px;
@@ -117,7 +117,7 @@ body {
 }
 
 .hero-left {
-    flex: 2;
+    flex: 4;
 }
 
 .hero-right {
@@ -202,8 +202,8 @@ h2 {
 /* PROJECT GRID */
 .projects {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 25px;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 30px;
     align-items: start;
 }
 
@@ -451,7 +451,19 @@ section {
 }
 
 .project-page {
-    max-width: 1200px;
+    max-width: 1600px;
+    width: 98%;
     margin: auto;
-    padding: 40px 20px;
+    padding: 50px 30px;
+}
+@media (max-width: 1200px) {
+    .projects {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .projects {
+        grid-template-columns: 1fr;
+    }
 }
